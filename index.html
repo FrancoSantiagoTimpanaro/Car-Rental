@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- https://car-rental-ten.vercel.app -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,800&display=swap" rel="stylesheet">
+    <title>Car Rental</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CarRental</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#info">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#vehiculos">Vehiculos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#clientes">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipo">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-texto">
+          <h4>Organiza tu viaje ya!</h4>
+          <h3><span>Ahorra</span> en grande con nosotros</h3>
+          <p>Alquila el auto que mejor se adapte a vos. Los mejores precios del mercado, sin limite de kilometros, retiralo cuando quieras y mas.</p>
+          <div class="botones">
+            <div class="boton-reserva">
+             <a href="#reserva">
+               <p>Reserva Ya!</p>
+             </a>
+            </div>
+          <div class="botones">
+            <div class="boton-contacto">
+             <a href="#contacto">
+               <p>Contactanos</p>
+             </a>
+            </div>
+          </div>   
+        </div>
+        </div>
+        <div class="hero-img">
+          <img class="hero-img_auto" src="Recursos/VW-hero.png" alt="">
+          <img class="hero-img_ciudad" src="Recursos/ciudad.jpg" alt="">
+        </div>
+      </div>
+      <div class="sector-reserva" id="reserva">
+          <div class="tipo-auto">
+            <label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff4d30" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+              </svg>
+              <p>Selecciona tu auto</p>
+            </label>
+            <select>
+              <option>Elegir Auto</option>
+              <option>Toyota Corolla</option>
+              <option>Toyota Etios</option>
+              <option>Volkswagen Passat</option>
+              <option>Chevrolet Spin</option>
+              <option>Ford Ecosport</option>
+            </select>
+          </div>
+          <div class="lugar-retiro">
+            <label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff4d30" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+              </svg>
+              <p>Sucursal de Retiro</p>
+            </label>
+            <select>
+              <option>Elegir Sucursal</option>
+              <option>Retiro</option>
+              <option>Palermo</option>
+              <option>Tigre</option>
+              <option>La Plata</option>
+              <option>El Palomar</option>
+            </select>
+          </div>
+          <div class="lugar-entrega">
+            <label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff4d30" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              <p>Sucursal de Entrega</p>
+            </label>
+            <select>
+              <option>Elegir Sucursal</option>
+              <option>Retiro</option>
+              <option>Palermo</option>
+              <option>Tigre</option>
+              <option>La Plata</option>
+              <option>El Palomar</option>
+            </select>
+          </div>
+          <div class="fecha-retiro">
+            <label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff4d30" class="bi bi-calendar4-range" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
+                <path d="M9 7.5a.5.5 0 0 1 .5-.5H15v2H9.5a.5.5 0 0 1-.5-.5v-1zm-2 3v1a.5.5 0 0 1-.5.5H1v-2h5.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+              <p>Fecha de Retiro</p>
+            </label>
+              <input type="date" name="" id="">
+          </div>
+          <div class="fecha-entrega">
+            <label>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff4d30" class="bi bi-calendar4-range" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
+                <path d="M9 7.5a.5.5 0 0 1 .5-.5H15v2H9.5a.5.5 0 0 1-.5-.5v-1zm-2 3v1a.5.5 0 0 1-.5.5H1v-2h5.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+              <p>Fecha de Entrega</p>
+            </label>
+              <input type="date" name="" id="">
+          </div>
+          <div class="boton-entrega">
+            <p>Reservalo!</p>
+          </div>
+      </div>
+      <div class="etapas">
+        <h4>Organiza tu viaje ya!</h4>
+        <h3>Rapido, sencillo y barato</h3>
+        <div class="seccion-etapas">
+          <div class="etapa">
+            <img src="Recursos/auto-fluor.png" alt="">
+            <h3>Selecciona tu Auto</h3>
+            <p>Tenemos un amplio espectro de vechiculos para elegir, elegi el que mas se adapte a tus necesidades.</p>
+          </div>
+          <div class="etapa">
+            <img src="Recursos/operario.png" alt="">
+            <h3>Contactanos</h3>
+            <p>Si no sabes como hacer o no te terminas de decidir, un integrante de nuestro equipo te puede ayudar.</p>
+          </div>
+          <div class="etapa">
+            <img src="Recursos/conduccion.png" alt="">
+            <h3>A disfrutar!</h3>
+            <p>Todo listo para empezar tu viaje, solo queda disfrutar, nosotros nos encargamos del resto.</p>
+          </div>
+        </div>
+      </div>
+      <!-- DATA AUTOS -->
+      <div class="data-autos" id="vehiculos">
+        <div class="data-botones" id="botones">
+            <button id="btn_corolla" class="seleccionado">Toyota Corolla</button>
+            <button id="btn_ecosport">Ford EcoSport</button>
+            <button id="btn_etios">Toyota Etios</button>
+            <button id="btn_passat">VolksWagen Passat</button>
+            <button id="btn_spin">Chevrolet Spin</button>
+        </div>
+        <div class="propiedades-autos" id="autos">
+            <div class="auto" id="corolla">
+                <div class="foto">
+                    <img src="Recursos/corolla.png" alt="" srcset="">
+                </div>
+                <div class="propiedades">
+                    <div class="precio"><span>U$D35</span>/ALQUILER x DIA
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Marca</p>
+                        <p>Toyota</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Modelo</p>
+                        <p>Corolla</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Año</p>
+                        <p>2022</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Puertas</p>
+                        <p>5</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">A/C</p>
+                        <p>Si</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Transmision</p>
+                        <p>Manual</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Combustible</p>
+                        <p>Diesel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="auto" id="ecosport" style="display: none;">
+                <div class="foto">
+                    <img src="Recursos/ecosport.png" alt="" srcset="">
+                </div>
+                <div class="propiedades">
+                  <div class="precio"><span>U$D30</span>/ALQUILER x DIA</div>
+                    <div class="propiedad">
+                        <p class="borde-der">Marca</p>
+                        <p>Ford</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Modelo</p>
+                        <p>EcoSport</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Año</p>
+                        <p>2021</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Puertas</p>
+                        <p>5</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">A/C</p>
+                        <p>Si</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Transmision</p>
+                        <p>Automatica</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Combustible</p>
+                        <p>Nafta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="auto" id="etios" style="display: none;">
+                <div class="foto">
+                    <img src="Recursos/etios.png" alt="" srcset="">
+                </div>
+                <div class="propiedades">
+                  <div class="precio"><span>U$D27</span>/ALQUILER x DIA</div>
+                    <div class="propiedad">
+                        <p class="borde-der">Marca</p>
+                        <p>Toyota</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Modelo</p>
+                        <p>Etios</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Año</p>
+                        <p>2020</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Puertas</p>
+                        <p>5</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">A/C</p>
+                        <p>Si</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Transmision</p>
+                        <p>Manual</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Combustible</p>
+                        <p>Diesel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="auto" id="passat" style="display: none;">
+                <div class="foto">
+                    <img src="Recursos/passat.png" alt="" srcset="">
+                </div>
+                <div class="propiedades">
+                  <div class="precio"><span>U$D40</span>/ALQUILER x DIA</div>
+                    <div class="propiedad">
+                        <p class="borde-der">Marca</p>
+                        <p>VolksWagen</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Modelo</p>
+                        <p>Passat</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Año</p>
+                        <p>2022</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Puertas</p>
+                        <p>5</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">A/C</p>
+                        <p>Si</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Transmision</p>
+                        <p>Automatica</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Combustible</p>
+                        <p>Diesel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="auto" id="spin" style="display: none;">
+                <div class="foto">
+                    <img src="Recursos/spin.png" alt="" srcset="">
+                </div>
+                <div class="propiedades">
+                  <div class="precio"><span>U$D45</span>/ALQUILER x DIA</div>
+                    <div class="propiedad">
+                        <p class="borde-der">Marca</p>
+                        <p>Chevrolet</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Modelo</p>
+                        <p>Spin</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Año</p>
+                        <p>2020</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Puertas</p>
+                        <p>5</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">A/C</p>
+                        <p>Si</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Transmision</p>
+                        <p>Manual</p>
+                    </div>
+                    <div class="propiedad">
+                        <p class="borde-der">Combustible</p>
+                        <p>Nafta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="separador-ahorra">
+      <h1>Ahorra en grande con nosotros!</h1>
+      <p>Aprovecha nuestros precios, descuentos y atencion <span>todo el dia</span></p>
+    </div>
+    <div class="clientes">
+      <img class="clientes_img" src="Recursos/Autos-separador.png" alt="">
+      <div class="clientes_txt">
+        <h4>Algunas Reseñas</h4>
+        <h2>Lo que nuestros clientes piensan</h2>
+      </div>
+      <div class="box-clientes">
+        <div class="cliente">
+          <div class="cliente_txt">
+            <p>"Contratamos con mi pareja un auto por una semana, la experiencia fue increible. El tramite fue rapido y super agil."</p>
+          </div>
+          <div class="cliente_info">
+            <div class="cliente_info_img">
+              <img src="Recursos/GermanBeder-150x150.jpg" alt="">
+            </div>
+            <div class="cliente_info_data">
+                <h5>Gergramito Beder</h5>
+                <p>Buenos Aires</p>
+            </div>
+          </div>
+        </div>
+        <div class="cliente">
+          <div class="cliente_txt">
+            <p>"Soy una persona mayor, con dificultades para con la tecnologia y con esta empresa fue muy versatil la contratacion del servcio. Muy limpia y comoda la camioneta."</p>
+          </div>
+          <div class="cliente_info">
+            <div class="cliente_info_img">
+              <img src="Recursos/pachu.jpg" alt="">
+            </div>
+            <div class="cliente_info_data">
+                <h5>Pablo Peña</h5>
+                <p>Rosario</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PREGUNTAS FRECUENTES -->
+    <div class="preguntas-frecuentes">
+      <h2>Preguntas Frecuentes</h2>
+      <p>Algunas preguntas que suelen surgir en el proceso de alquiler de nuestros servicios acompañados de sus respuestas.</p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Como puedo ahorrar un poco mas?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Sacar con un buen tiempo de anticipacion.</strong> Es de conocimiento comun que mientras mas cerca de la fecha de tu viaje contrates los servicios los precios son mayores. A parte de 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>
