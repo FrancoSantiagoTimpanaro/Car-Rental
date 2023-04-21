@@ -551,7 +551,61 @@ h4{
     margin-right: auto;
     margin-top: 4rem;
 }
+.preguntas-frecuentes h3,
+.preguntas-frecuentes p{
+    text-align: center;
+}
 
-.accordion-button-active{
-    background-color: yellow;
+.accordion-button.collapsed{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) { 
+    .preguntas-frecuentes{
+        width: 100%;
+    }
+}
+
+/* FOOTER */
+footer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+footer h5{
+    font-weight: 600;
+}
+.footer-suscribite{
+    display: flex;
+    flex-direction: column;
+}
+.footer-suscribite input{
+    border: none;
+    background-color: rgb(205, 205, 205);
+    margin-bottom: 5px;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+}
+
+.footer-suscribite button{
+    border: none;
+    height: 30px;
+    color: white;
+    font-weight: 600;
+    background-color: var(--naranja);
+}
+
+@media (max-width: 768px) { 
+    footer{
+        flex-direction: column;
+    }
+    .footer-suscribite input{
+        width: 100%;
+    }
 }
